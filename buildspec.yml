@@ -7,11 +7,11 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - sudo yum install -y httpd
+      - yum install -y httpd
   post_build:
     commands:
       - echo Build completed on `date` and started Apache server
-      - sudo service httpd start
+      - service httpd start
 artifacts:
   files:
     - "**/*"
