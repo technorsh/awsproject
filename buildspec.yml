@@ -14,4 +14,4 @@ phases:
       - sudo service httpd start
 artifacts:
   files:
-    - **/*
+    - "**/*"
